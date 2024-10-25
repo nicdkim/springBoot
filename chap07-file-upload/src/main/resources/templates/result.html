@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+
+    <div th:if="${uploadedFiles != null}">
+        <div th:each="img : ${uploadedFiles}">
+            <img th:src="${img}" alt="Uploaded Image" style="max-width: 100%;"/>
+        </div>
+    </div>
+</body>
+</html>
