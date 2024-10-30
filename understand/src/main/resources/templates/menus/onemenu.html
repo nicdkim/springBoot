@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Menu</title>
+</head>
+<body>
+<h1>메뉴 상세</h1>
+<table>
+    <tr>
+        <th>메뉴 번호</th>
+        <td th:text="${menu.code}"></td>
+    </tr>
+    <tr>
+        <th>메뉴 이름</th>
+        <td th:text="${menu.name}"></td>
+    </tr>
+    <tr>
+        <th>메뉴 가격</th>
+        <td th:text="${menu.price}"></td>
+    </tr>
+    <tr>
+        <th>카테고리 코드</th>
+        <td th:text="${menu.categoryCode}"></td>
+    </tr>
+    <tr>
+        <th>판매 상태</th>
+        <td th:text="${menu.status}"></td>
+    </tr>
+</table>
+<a href="/menus/menus">모든 메뉴 보기</a>
+</body>
+</html>
