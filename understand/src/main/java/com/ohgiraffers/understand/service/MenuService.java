@@ -41,4 +41,14 @@ public class MenuService {
         int result = menuDAO.regist(menuDTO);
         return result;
     }
+
+    public int update(MenuDTO menuDTO) {
+        int menu = menuDAO.update(menuDTO);
+        return menu;
+    }
+
+    public int delete(MenuDTO menuDTO) {
+        int menu = menuDAO.delete(menuDTO);
+        return menu;
+    }
 }
